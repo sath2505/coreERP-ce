@@ -5,6 +5,8 @@
     <formView id="Section" type="Master" bindingBO="section/Section">
         <header>TDS Section</header>
         <keyField>section_id</keyField>
+        <newDocEnabled/>
+        <deleteDocEnabled/> 
         <controlSection editMode="Edit">
             <dataBinding>
                 <field id="section" label="Section" type="string" control="TextBox" size="ms" maxLength="50" readOnly="OnEdit" />

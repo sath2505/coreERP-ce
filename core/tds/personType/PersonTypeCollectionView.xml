@@ -6,17 +6,18 @@
         <header>Person Type</header>
         <collectionSection>
             <connectionType>
-                <companyDB/>
+                <mainDB/>
             </connectionType>
             <sql>
                 <command>   
-                    select person_type_id, person_type_desc, true as edit_not_allowed from tds.person_type order by person_type_desc
-                </command>
+                    select person_type_id, person_type_desc from tds.person_type order by person_type_desc
+           </command>
             </sql>
             <displayFields>
                 <displayField columnName="person_type_desc" displayName="Person Type"/>
             </displayFields>
-            <editNotAllowed field='edit_not_allowed'/>
         </collectionSection>
     </collectionView>
 </cwFramework>
+
+    

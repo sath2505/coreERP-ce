@@ -3,6 +3,9 @@
              xsi:schemaLocation='http://xml.coreerp.com/schema/CwFramework http://coreerp.com/cwFramework.xsd'>
 
     <businessObject id="Rate" type="Master">
+        <connectionType>
+            <mainDB/>
+        </connectionType>
         <controlTable>
             <tableName>tds.rate</tableName>
             <primaryKey>rate_id</primaryKey>
@@ -10,7 +13,7 @@
                 <useEntity/>
             </fetchOrCreate>
             <save>
-                <useEntity/>
+                  <useEntity/>
             </save> 
             <delete>
                 <useEntity/>

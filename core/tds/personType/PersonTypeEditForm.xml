@@ -5,12 +5,11 @@
     <formView id="PersonType" type="Master" bindingBO="personType/PersonType">
         <header>Person Type</header>
         <keyField>person_type_id</keyField>
-        <!--   <newDocEnabled/>
-        <deleteDocEnabled/>-->
+           <newDocEnabled/>
+        <deleteDocEnabled/>
         <controlSection editMode="Edit">
             <dataBinding>
-                <field id="person_type_desc" label="Person Type" type="string" control="TextBox" size="m" maxLength="50" />
-                <nextRow/> 
+                <field id="person_type_desc" label="Person Type" type="string"  isOptional="true"  control="TextBox" size="m" maxLength="50"   />
             </dataBinding> 
         </controlSection>
     </formView>

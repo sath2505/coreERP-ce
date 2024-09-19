@@ -3,10 +3,13 @@
              xsi:schemaLocation='http://xml.coreerp.com/schema/CwFramework http://coreerp.com/cwFramework.xsd'>
 
     <businessObject id="PersonType" type="Master">
+        <connectionType>
+            <mainDB/>
+        </connectionType>
         <controlTable>
             <tableName>tds.person_type</tableName>
             <primaryKey>person_type_id</primaryKey>
-            <fetchOrCreate>
+           <fetchOrCreate>
                 <useEntity/>
             </fetchOrCreate>
             <save>
